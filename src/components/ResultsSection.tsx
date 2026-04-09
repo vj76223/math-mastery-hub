@@ -51,7 +51,7 @@ const ResultsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
-            Proven <span className="gradient-text">Results</span>
+            My <span className="gradient-text">Results</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">
             Numbers that speak for themselves — consistent excellence year after year.
