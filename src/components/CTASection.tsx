@@ -15,9 +15,9 @@ const CTASection = () => {
           viewport={{ once: true }}
           className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary-foreground"
         >
-          Book Your Free Demo
+          Ready to Excel
           <br />
-          Class Today
+          in Maths?
         </motion.h2>
 
         <motion.p
@@ -27,7 +27,7 @@ const CTASection = () => {
           transition={{ delay: 0.1 }}
           className="mt-4 text-primary-foreground/70 max-w-md mx-auto"
         >
-          Experience the difference. One class is all it takes to see why students love learning maths with us.
+          Book a free demo class with me and experience the difference. One class is all it takes.
         </motion.p>
 
         <motion.div
@@ -38,7 +38,7 @@ const CTASection = () => {
           className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20book%20a%20free%20demo%20class"
+            href="https://wa.me/919999999999?text=Hi%20Rahul%2C%20I%20want%20to%20book%20a%20free%20demo%20class"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-2xl text-base font-bold transition-all hover:scale-105"

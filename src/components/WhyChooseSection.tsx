@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Brain, Clock, UserCheck, Award, Lightbulb, HeartHandshake } from "lucide-react";
 
 const reasons = [
-  { icon: Brain, title: "Concept Clarity", desc: "Deep understanding over rote learning — every topic explained from first principles." },
+  { icon: Brain, title: "Concept Clarity", desc: "I focus on deep understanding over rote learning — every topic explained from first principles." },
   { icon: Clock, title: "Flexible Timing", desc: "Batch and one-on-one sessions scheduled around your convenience." },
   { icon: UserCheck, title: "Personal Attention", desc: "Small batches ensure every student gets individual guidance and doubt resolution." },
   { icon: Award, title: "Proven Track Record", desc: "Consistently producing 90%+ scorers and top JEE rankers year after year." },
@@ -12,7 +12,7 @@ const reasons = [
 
 const WhyChooseSection = () => {
   return (
-    <section id="why-us" className="py-24 relative bg-secondary/30">
+    <section id="why-me" className="py-24 relative bg-secondary/30">
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,10 +21,10 @@ const WhyChooseSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
-            Why <span className="gradient-text">Choose Us</span>
+            Why Learn <span className="gradient-text">With Me</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">
-            What sets our coaching apart from the rest.
+            What sets my coaching apart from the rest.
           </p>
         </motion.div>
 
