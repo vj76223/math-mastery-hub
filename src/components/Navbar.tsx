@@ -27,7 +27,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-4">
         <a href="#" className="text-xl font-extrabold gradient-text">
-          Rahul Maths
+          Abhinav Maths
         </a>
 
         <div className="hidden md:flex items-center gap-8">

@@ -6,9 +6,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid sm:grid-cols-3 gap-8">
           <div>
-            <div className="text-lg font-extrabold gradient-text mb-3">Rahul Maths</div>
+            <div className="text-lg font-extrabold gradient-text mb-3">
+              Abhinav Maths
+            </div>
             <p className="text-sm text-muted-foreground">
-              Expert maths coaching for Class 10–12 & JEE. Helping students achieve their best since 2016.
+              Expert maths coaching for Class 10–12 & JEE. Helping students
+              achieve their best since 2016.
             </p>
           </div>
           <div>
@@ -34,9 +37,15 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-3">Contact</h4>
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <span className="flex items-center gap-2"><Phone size={14} /> +91 99999 99999</span>
-              <span className="flex items-center gap-2"><Mail size={14} /> rahul@mathsmentor.in</span>
-              <span className="flex items-center gap-2"><MapPin size={14} /> New Delhi, India</span>
+              <span className="flex items-center gap-2">
+                <Phone size={14} /> +91 99999 99999
+              </span>
+              <span className="flex items-center gap-2">
+                <Mail size={14} /> Abhinav@mathsmentor.in
+              </span>
+              <span className="flex items-center gap-2">
+                <MapPin size={14} /> New Delhi, India
+              </span>
               <a
                 href="https://youtube.com/@mathsgenius"
                 target="_blank"
@@ -49,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-border text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Rahul Maths. All rights reserved.
+          © {new Date().getFullYear()} Abhinav Maths. All rights reserved.
         </div>
       </div>
     </footer>

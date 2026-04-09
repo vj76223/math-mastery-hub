@@ -34,7 +34,7 @@ const AboutSection = () => {
           >
             <img
               src={teacherImg}
-              alt="Rahul — Maths Educator"
+              alt="Abhinav — Maths Educator"
               width={320}
               height={400}
               loading="lazy"
@@ -50,16 +50,18 @@ const AboutSection = () => {
             className="flex-1"
           >
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Hi! I'm <strong className="text-foreground">Rahul</strong>, a passionate maths educator
-              dedicated to making mathematics intuitive and enjoyable. Over the past 8 years, I've
-              helped hundreds of students transform their relationship with maths — from fear to
-              confidence, from average marks to top scores.
+              Hi! I'm <strong className="text-foreground">Abhinav</strong>, a
+              passionate maths educator dedicated to making mathematics
+              intuitive and enjoyable. Over the past 8 years, I've helped
+              hundreds of students transform their relationship with maths —
+              from fear to confidence, from average marks to top scores.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              My teaching philosophy is simple: <em>understand the "why" before the "how"</em>.
-              I believe every student can excel in maths with the right guidance, patience, and
-              problem-solving strategies. Whether you're preparing for boards or cracking JEE,
-              I'm here to help you succeed.
+              My teaching philosophy is simple:{" "}
+              <em>understand the "why" before the "how"</em>. I believe every
+              student can excel in maths with the right guidance, patience, and
+              problem-solving strategies. Whether you're preparing for boards or
+              cracking JEE, I'm here to help you succeed.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4">
@@ -69,7 +71,9 @@ const AboutSection = () => {
                   className="flex items-center gap-3 glass rounded-xl px-4 py-3"
                 >
                   <h.icon className="text-primary flex-shrink-0" size={18} />
-                  <span className="text-sm font-medium text-foreground">{h.text}</span>
+                  <span className="text-sm font-medium text-foreground">
+                    {h.text}
+                  </span>
                 </div>
               ))}
             </div>
