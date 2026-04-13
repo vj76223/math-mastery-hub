@@ -3,28 +3,20 @@ import { Youtube } from "lucide-react";
 
 const videos = [
   {
-    id: "dQw4w9WgXcQ",
-    title: "Calculus Made Easy — Limits & Derivatives",
+    id: "0sxHKX1DpNo",
+    title: "AIR 1 RK Shishir Mentorship — Success Story",
   },
   {
-    id: "rfscVS0vtbw",
-    title: "Trigonometry Full Chapter — Class 10",
+    id: "aYIKhVS4lNo",
+    title: "JEE Advanced Strategy with AIR 1",
   },
   {
-    id: "pTnEG_WGd2Q",
-    title: "JEE Mains — Top 20 Problems Solved",
+    id: "FkkXpqyjCAM",
+    title: "Math Mastery Techniques — Abhinav Jha",
   },
   {
-    id: "HvMSRWTE2mI",
-    title: "Probability Masterclass — Class 12",
-  },
-  {
-    id: "1PfQLdHc3_8",
-    title: "Quadratic Equations — Tricks & Shortcuts",
-  },
-  {
-    id: "s86-Z-CbaHA",
-    title: "Coordinate Geometry — Board Exam Prep",
+    id: "PVgErBPYb-Q",
+    title: "Rank Producer Teaching Methods",
   },
 ];
 
@@ -39,10 +31,11 @@ const VideoSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
-            My <span className="gradient-text">YouTube Lessons</span>
+            Mentor <span className="gradient-text">Spotlight</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">
-            Free maths lessons watched by thousands of students. Subscribe and learn at your own pace.
+            Learn from my mentorship of AIR 1 RK Shishir and discover the
+            teaching methods that produce top ranks.
           </p>
         </motion.div>
 

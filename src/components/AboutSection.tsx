@@ -3,10 +3,10 @@ import { GraduationCap, BookOpen, Award, Users } from "lucide-react";
 import teacherImg from "@/assets/teacher-portrait.jpg";
 
 const highlights = [
-  { icon: GraduationCap, text: "M.Sc Mathematics — Delhi University" },
-  { icon: BookOpen, text: "8+ years of teaching experience" },
-  { icon: Award, text: "Produced 50+ top rankers in JEE & Boards" },
-  { icon: Users, text: "Coached 500+ students across India" },
+  { icon: GraduationCap, text: "B.Tech, NIT Nagpur" },
+  { icon: BookOpen, text: "10+ Years of Teaching Excellence" },
+  { icon: Award, text: "Mentored AIR 1, AIR 40, AIR 79 (JEE Advanced)" },
+  { icon: Users, text: "50M+ Students Reached Across Platforms" },
 ];
 
 const AboutSection = () => {
@@ -21,7 +21,7 @@ const AboutSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
-            About <span className="gradient-text">Me</span>
+            Meet <span className="gradient-text">Abhinav Jha</span>
           </h2>
         </motion.div>
 
@@ -50,18 +50,20 @@ const AboutSection = () => {
             className="flex-1"
           >
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Hi! I'm <strong className="text-foreground">Abhinav</strong>, a
-              passionate maths educator dedicated to making mathematics
-              intuitive and enjoyable. Over the past 8 years, I've helped
-              hundreds of students transform their relationship with maths —
-              from fear to confidence, from average marks to top scores.
+              Hi! I'm <strong className="text-foreground">Abhinav Jha</strong>,
+              a rank producer in JEE Mathematics. With 10+ years of teaching
+              excellence, I've guided students to achieve{" "}
+              <strong className="text-foreground">AIR 1, AIR 40, AIR 79</strong>{" "}
+              in JEE Advanced. My approach has impacted{" "}
+              <strong className="text-foreground">50M+</strong> learners across
+              digital platforms.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              My teaching philosophy is simple:{" "}
-              <em>understand the "why" before the "how"</em>. I believe every
-              student can excel in maths with the right guidance, patience, and
-              problem-solving strategies. Whether you're preparing for boards or
-              cracking JEE, I'm here to help you succeed.
+              Abhinav Jha is not just a teacher — he is a rank producer. My
+              teaching focuses on deep conceptual clarity, exam strategy, and
+              building problem-solving intuition. I believe in understanding the
+              "why" before the "how", ensuring long-term retention and
+              confidence for cracking JEE.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4">

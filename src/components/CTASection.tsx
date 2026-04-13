@@ -15,9 +15,9 @@ const CTASection = () => {
           viewport={{ once: true }}
           className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary-foreground"
         >
-          Ready to Excel
+          Start Your Journey
           <br />
-          in Maths?
+          to JEE Success
         </motion.h2>
 
         <motion.p
@@ -27,8 +27,8 @@ const CTASection = () => {
           transition={{ delay: 0.1 }}
           className="mt-4 text-primary-foreground/70 max-w-md mx-auto"
         >
-          Book a free demo class with me and experience the difference. One
-          class is all it takes.
+          Learn from the mentor who guided AIR 1. Book your free session and
+          discover the rank producer's teaching methods.
         </motion.p>
 
         <motion.div
@@ -39,13 +39,13 @@ const CTASection = () => {
           className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="https://wa.me/919999999999?text=Hi%20Abhinav%2C%20I%20want%20to%20book%20a%20free%20demo%20class"
+            href="https://wa.me/919999999999?text=Hi%20Abhinav%2C%20I%20want%20to%20book%20a%20free%20session"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-2xl text-base font-bold transition-all hover:scale-105"
             style={{ boxShadow: "0 0 32px hsl(170 60% 42% / 0.5)" }}
           >
-            Book Free Demo →
+            Book Free Session →
           </a>
           <a
             href="https://wa.me/919999999999"

@@ -3,9 +3,9 @@ import { MessageCircle, Youtube, GraduationCap } from "lucide-react";
 import teacherImg from "@/assets/teacher-portrait.jpg";
 
 const stats = [
-  { value: "500+", label: "Students Coached" },
-  { value: "95%+", label: "Avg Score" },
-  { value: "8+", label: "Years Experience" },
+  { value: "50M+", label: "Learners Impacted" },
+  { value: "AIR 1", label: "Mentored Rank" },
+  { value: "10+", label: "Years Experience" },
 ];
 
 const HeroSection = () => {
@@ -33,7 +33,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6 }}
               className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-sm font-medium text-primary mb-6"
             >
-              <GraduationCap size={16} /> Hi, I'm Abhinav — Your Maths Mentor
+              <GraduationCap size={16} /> Learn Maths from a Rank Producer
             </motion.div>
 
             <motion.h1
@@ -42,9 +42,11 @@ const HeroSection = () => {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-foreground"
             >
-              I Help Students Score <span className="gradient-text">95%+</span>
+              Abhinav Jha — IIT Mentor
               <br className="hidden sm:block" />
-              in Maths
+              <span className="gradient-text">
+                Guided AIR 1, AIR 40, AIR 79
+              </span>
             </motion.h1>
 
             <motion.p
@@ -53,9 +55,8 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.25 }}
               className="mt-6 text-lg text-muted-foreground max-w-xl"
             >
-              Personalized maths coaching for Class 10, 11, 12 & JEE.
-              Concept-first approach with proven results and individual
-              attention.
+              Master concepts. Build speed. Crack JEE with confidence. 10+ years
+              of teaching excellence. 50M+ learners impacted.
             </motion.p>
 
             <motion.div
@@ -68,7 +69,7 @@ const HeroSection = () => {
                 href="#book-demo"
                 className="btn-glow-accent text-accent-foreground px-8 py-4 rounded-2xl text-base font-bold"
               >
-                Book Free Demo Class →
+                Book a Free Session →
               </a>
               <a
                 href="https://wa.me/919999999999"
@@ -89,7 +90,7 @@ const HeroSection = () => {
               transition={{ delay: 0.6 }}
               className="mt-4 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
-              <Youtube size={16} /> Subscribe on YouTube — 10K+ learners
+              <Youtube size={16} /> Subscribe on YouTube — 50M+ learners reached
             </motion.a>
           </div>
 
@@ -120,8 +121,10 @@ const HeroSection = () => {
                 }}
                 className="absolute -bottom-4 -left-4 glass rounded-2xl px-4 py-3 text-center"
               >
-                <div className="text-lg font-extrabold gradient-text">500+</div>
-                <div className="text-xs text-muted-foreground">Students</div>
+                <div className="text-lg font-extrabold gradient-text">
+                  AIR 1
+                </div>
+                <div className="text-xs text-muted-foreground">Mentored</div>
               </motion.div>
               <motion.div
                 animate={{ y: [0, -6, 0] }}
@@ -134,7 +137,7 @@ const HeroSection = () => {
                 className="absolute -top-4 -right-4 glass rounded-2xl px-4 py-3 text-center"
               >
                 <div className="text-lg font-extrabold gradient-text">
-                  8+ yrs
+                  10+ yrs
                 </div>
                 <div className="text-xs text-muted-foreground">Experience</div>
               </motion.div>

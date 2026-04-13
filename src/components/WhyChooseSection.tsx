@@ -1,13 +1,37 @@
 import { motion } from "framer-motion";
-import { Brain, Clock, UserCheck, Award, Lightbulb, HeartHandshake } from "lucide-react";
+import { Brain, Lightbulb, Target, BookOpen, Zap, Award } from "lucide-react";
 
-const reasons = [
-  { icon: Brain, title: "Concept Clarity", desc: "I focus on deep understanding over rote learning — every topic explained from first principles." },
-  { icon: Clock, title: "Flexible Timing", desc: "Batch and one-on-one sessions scheduled around your convenience." },
-  { icon: UserCheck, title: "Personal Attention", desc: "Small batches ensure every student gets individual guidance and doubt resolution." },
-  { icon: Award, title: "Proven Track Record", desc: "Consistently producing 90%+ scorers and top JEE rankers year after year." },
-  { icon: Lightbulb, title: "Problem-Solving Focus", desc: "Practice with curated problems and learn powerful solving strategies." },
-  { icon: HeartHandshake, title: "Parent-Teacher Connect", desc: "Regular progress updates and open communication with parents." },
+const philosophyPoints = [
+  {
+    icon: Brain,
+    title: "Explain Simply",
+    desc: "Break down complex concepts into simple, understandable terms using the Feynman Technique.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Identify Gaps",
+    desc: "Pinpoint exactly where understanding breaks down and fill those knowledge gaps systematically.",
+  },
+  {
+    icon: Target,
+    title: "Build Deep Clarity",
+    desc: "Focus on fundamental principles rather than memorization for lasting comprehension.",
+  },
+  {
+    icon: BookOpen,
+    title: "Apply Concepts",
+    desc: "Use newly understood concepts in novel situations to build true problem-solving intuition.",
+  },
+  {
+    icon: Zap,
+    title: "Build Speed",
+    desc: "Once concepts are clear, develop the speed and accuracy needed for competitive exams.",
+  },
+  {
+    icon: Award,
+    title: "Exam Strategy",
+    desc: "Combine conceptual clarity with strategic thinking to maximize JEE performance.",
+  },
 ];
 
 const WhyChooseSection = () => {
@@ -21,15 +45,16 @@ const WhyChooseSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
-            Why Learn <span className="gradient-text">With Me</span>
+            Teaching <span className="gradient-text">Philosophy</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">
-            What sets my coaching apart from the rest.
+            Based on the Feynman Technique — I believe Maths is not about
+            solving problems, it's about understanding why they work.
           </p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {reasons.map((r, i) => (
+          {philosophyPoints.map((p, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
@@ -39,10 +64,13 @@ const WhyChooseSection = () => {
               className="group glass rounded-2xl p-6 card-glow"
             >
               <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-accent/10 transition-colors">
-                <r.icon className="text-primary group-hover:text-accent transition-colors" size={20} />
+                <p.icon
+                  className="text-primary group-hover:text-accent transition-colors"
+                  size={20}
+                />
               </div>
-              <h3 className="font-bold text-foreground">{r.title}</h3>
-              <p className="text-sm text-muted-foreground mt-2">{r.desc}</p>
+              <h3 className="font-bold text-foreground">{p.title}</h3>
+              <p className="text-sm text-muted-foreground mt-2">{p.desc}</p>
             </motion.div>
           ))}
         </div>

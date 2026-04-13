@@ -3,27 +3,27 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Aarav Sharma",
-    role: "Class 12 Student",
-    text: "I went from 65% to 94% in maths within 6 months. The way concepts are explained made everything click for me.",
+    name: "AIR 1 Student",
+    role: "JEE Advanced 2022",
+    text: "Completed entire JEE Maths syllabus by class 10. His mentorship led to AIR 1.",
     rating: 5,
   },
   {
-    name: "Priya Gupta",
-    role: "Parent",
-    text: "As a parent, I can see the difference in my daughter's confidence. The regular updates and personal attention are outstanding.",
+    name: "99.994%ile Student",
+    role: "JEE Advanced",
+    text: "Abhinav Sir didn't just teach Maths, he taught me how to think, plan, and attempt the JEE with precision.",
     rating: 5,
   },
   {
-    name: "Rohan Mehta",
-    role: "JEE Aspirant",
-    text: "The problem-solving strategies I learned here helped me crack JEE Mains with a top score in maths. Highly recommend!",
+    name: "AIR 40 Student",
+    role: "JEE Advanced",
+    text: "The Feynman-based teaching approach gave me the conceptual clarity needed to crack JEE Advanced.",
     rating: 5,
   },
   {
-    name: "Sneha Patel",
-    role: "Class 10 Student",
-    text: "Maths used to scare me, but now it's my strongest subject. Thank you sir for making it so easy to understand!",
+    name: "AIR 79 Student",
+    role: "JEE Advanced 2022",
+    text: "From average marks to AIR 79 — his mentorship transformed my problem-solving abilities completely.",
     rating: 5,
   },
 ];
@@ -40,10 +40,11 @@ const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
-            Student <span className="gradient-text">Testimonials</span>
+            Success <span className="gradient-text">Stories</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">
-            Hear from students and parents who've experienced the difference.
+            Hear from AIR rankers and top performers who've experienced the rank
+            producer's mentorship.
           </p>
         </motion.div>
 
@@ -62,13 +63,17 @@ const TestimonialsSection = () => {
                   <Star key={j} size={14} className="fill-accent text-accent" />
                 ))}
               </div>
-              <p className="text-sm text-foreground/80 leading-relaxed">"{t.text}"</p>
+              <p className="text-sm text-foreground/80 leading-relaxed">
+                "{t.text}"
+              </p>
               <div className="mt-4 flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-sm font-bold text-primary">
                   {t.name[0]}
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-foreground">{t.name}</div>
+                  <div className="text-sm font-semibold text-foreground">
+                    {t.name}
+                  </div>
                   <div className="text-xs text-muted-foreground">{t.role}</div>
                 </div>
               </div>

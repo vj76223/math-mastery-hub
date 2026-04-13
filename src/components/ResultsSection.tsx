@@ -4,10 +4,34 @@ import { useRef, useState, useEffect } from "react";
 import { Trophy, Users, Star, TrendingUp } from "lucide-react";
 
 const results = [
-  { icon: Trophy, value: 95, suffix: "%+", label: "Average Score", color: "text-primary" },
-  { icon: Users, value: 500, suffix: "+", label: "Students Coached", color: "text-accent" },
-  { icon: Star, value: 50, suffix: "+", label: "Top Rankers", color: "text-primary" },
-  { icon: TrendingUp, value: 8, suffix: "+", label: "Years Experience", color: "text-accent" },
+  {
+    icon: Trophy,
+    value: 30,
+    suffix: "+",
+    label: "Ranks Under AIR 500",
+    color: "text-primary",
+  },
+  {
+    icon: Users,
+    value: 1,
+    suffix: "",
+    label: "AIR 1 Mentored",
+    color: "text-accent",
+  },
+  {
+    icon: Star,
+    value: 99,
+    suffix: "%+",
+    label: "Percentile Students",
+    color: "text-primary",
+  },
+  {
+    icon: TrendingUp,
+    value: 50,
+    suffix: "M+",
+    label: "Learners Reached",
+    color: "text-accent",
+  },
 ];
 
 const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
@@ -34,7 +58,8 @@ const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
 
   return (
     <div ref={ref} className="text-4xl font-extrabold gradient-text">
-      {count}{suffix}
+      {count}
+      {suffix}
     </div>
   );
 };
@@ -51,10 +76,11 @@ const ResultsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
-            My <span className="gradient-text">Results</span>
+            Results That <span className="gradient-text">Speak</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">
-            Numbers that speak for themselves — consistent excellence year after year.
+            Not luck. A system that works — 30+ ranks within AIR 500 and
+            consistent 99%ile results.
           </p>
         </motion.div>
 
@@ -70,7 +96,9 @@ const ResultsSection = () => {
             >
               <r.icon className={`mx-auto mb-4 ${r.color}`} size={28} />
               <Counter target={r.value} suffix={r.suffix} />
-              <div className="text-sm text-muted-foreground mt-2">{r.label}</div>
+              <div className="text-sm text-muted-foreground mt-2">
+                {r.label}
+              </div>
             </motion.div>
           ))}
         </div>
