@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import ResultsSection from "@/components/ResultsSection";
 import CoursesSection from "@/components/CoursesSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
+import LearningPhilosophy from "@/components/LearningPhilosophy";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import VideoSection from "@/components/VideoSection";
 import CTASection from "@/components/CTASection";
@@ -16,10 +17,11 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <AboutSection />
+      <VideoSection />
       <ResultsSection />
       <CoursesSection />
       <WhyChooseSection />
-      <VideoSection />
+      <LearningPhilosophy />
       <TestimonialsSection />
       <CTASection />
       <Footer />
