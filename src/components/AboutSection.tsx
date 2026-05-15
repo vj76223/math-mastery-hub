@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { GraduationCap, BookOpen, Award, Users } from "lucide-react";
 import teacherImg from "@/assets/teacher-portrait.jpg";
+import SectionBackground from "@/components/SectionBackground";
 
 const highlights = [
   { icon: GraduationCap, text: "B.Tech, NIT Nagpur" },
@@ -13,9 +14,9 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="py-24 relative section-transition bg-secondary/30"
+      className="section-alt py-24 relative"
     >
-      <div className="blob w-72 h-72 bg-primary/10 top-10 -left-20 animate-pulse-glow" />
+      <SectionBackground variant="alt" />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -24,7 +25,8 @@ const AboutSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-20"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground mb-4">
+          <p className="si-label mb-3">About the Mentor</p>
+          <h2 className="si-heading text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
             Meet <span className="gradient-text">Abhinav Jha</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -186,7 +188,7 @@ const AboutSection = () => {
               </p>
               <a
                 href="#book-demo"
-                className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-2xl text-base font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-bold shadow-[0_10px_35px_rgba(255,115,0,0.35)] hover:shadow-[0_10px_40px_rgba(255,115,0,0.5)] transition-all duration-300 hover:scale-105"
               >
                 Start Your Journey
               </a>

@@ -1,5 +1,6 @@
-import { motion } from 'framer-motion';
-import { Brain, Lightbulb, Target, BookOpen, ArrowRight, CheckCircle } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Brain, Lightbulb, Target, BookOpen, ArrowRight, CheckCircle } from "lucide-react";
+import SectionBackground from "@/components/SectionBackground";
 
 const LearningPhilosophy = () => {
   const philosophySteps = [
@@ -7,29 +8,29 @@ const LearningPhilosophy = () => {
       icon: Brain,
       title: "Explain Simply",
       description: "Break down complex concepts using the Feynman Technique",
-      color: "text-blue-500",
-      bgColor: "bg-blue-50",
+      color: "text-primary",
+      bgColor: "bg-primary/10",
     },
     {
       icon: Lightbulb,
       title: "Identify Gaps",
       description: "Pinpoint exactly where understanding breaks down",
-      color: "text-yellow-500",
-      bgColor: "bg-yellow-50",
+      color: "text-primary",
+      bgColor: "bg-primary/15",
     },
     {
       icon: Target,
       title: "Build Deep Clarity",
       description: "Focus on fundamental principles over memorization",
-      color: "text-green-500",
-      bgColor: "bg-green-50",
+      color: "text-primary",
+      bgColor: "bg-primary/20",
     },
     {
       icon: BookOpen,
       title: "Apply Concepts",
       description: "Use knowledge in novel situations for true mastery",
-      color: "text-purple-500",
-      bgColor: "bg-purple-50",
+      color: "text-primary",
+      bgColor: "bg-primary/10",
     },
   ];
 
@@ -61,8 +62,8 @@ const LearningPhilosophy = () => {
   ];
 
   return (
-    <section className="py-24 relative section-transition">
-      <div className="blob w-80 h-80 bg-accent/10 top-20 right-10 animate-pulse-glow" />
+    <section className="section-dark py-24 relative">
+      <SectionBackground variant="dark" />
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <motion.div
@@ -72,7 +73,8 @@ const LearningPhilosophy = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-20"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground mb-4">
+          <p className="si-label mb-3">Methodology</p>
+          <h2 className="si-heading text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
             Learning <span className="gradient-text">Philosophy</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -166,14 +168,14 @@ const LearningPhilosophy = () => {
                     {/* Timeline dot */}
                     <div className="relative z-10">
                       <div className={`w-16 h-16 rounded-full flex items-center justify-center ${
-                        step.status === 'completed' ? 'bg-green-100' :
-                        step.status === 'active' ? 'bg-blue-100' : 'bg-gray-100'
+                        step.status === 'completed' ? 'bg-primary/20' :
+                        step.status === 'active' ? 'bg-primary/30' : 'bg-muted'
                       } group-hover:scale-110 transition-transform duration-300`}>
                         {step.status === 'completed' ? (
-                          <CheckCircle className="text-green-500" size={24} />
+                          <CheckCircle className="text-primary" size={24} />
                         ) : (
                           <div className={`w-3 h-3 rounded-full ${
-                            step.status === 'active' ? 'bg-blue-500' : 'bg-gray-400'
+                            step.status === 'active' ? 'bg-primary' : 'bg-muted-foreground/40'
                           }`} />
                         )}
                       </div>
@@ -186,16 +188,16 @@ const LearningPhilosophy = () => {
                           <h4 className="font-bold text-foreground text-lg mb-2">{step.title}</h4>
                           <p className="text-muted-foreground mb-2">{step.description}</p>
                           <span className={`text-sm font-medium ${
-                            step.status === 'completed' ? 'text-green-600' :
-                            step.status === 'active' ? 'text-blue-600' : 'text-gray-500'
+                            step.status === 'completed' ? 'text-primary' :
+                            step.status === 'active' ? 'text-primary' : 'text-muted-foreground'
                           }`}>
                             {step.duration}
                           </span>
                         </div>
                         
                         <div className={`px-4 py-2 rounded-full text-sm font-medium ${
-                          step.status === 'completed' ? 'bg-green-100 text-green-700' :
-                          step.status === 'active' ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-600'
+                          step.status === 'completed' ? 'bg-primary/20 text-primary' :
+                          step.status === 'active' ? 'bg-primary/30 text-primary' : 'bg-muted text-muted-foreground'
                         }`}>
                           {step.status === 'completed' ? 'Completed' :
                            step.status === 'active' ? 'Active' : 'Upcoming'}

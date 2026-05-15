@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
-import { Trophy, Users, Star, TrendingUp, Award } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Trophy, Users, TrendingUp, Award } from "lucide-react";
+import SectionBackground from "@/components/SectionBackground";
 
 const results = [
   {
@@ -99,9 +99,9 @@ const ResultsSection = () => {
   return (
     <section
       id="results"
-      className="py-24 relative section-transition bg-secondary/30"
+      className="section-alt py-24 relative"
     >
-      <div className="blob w-80 h-80 bg-primary/10 -top-10 left-1/2 animate-pulse-glow" />
+      <SectionBackground variant="alt" />
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <motion.div
@@ -111,7 +111,8 @@ const ResultsSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-20"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground mb-4">
+          <p className="si-label mb-3">Proven Track Record</p>
+          <h2 className="si-heading text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
             Results That <span className="gradient-text">Speak</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -201,7 +202,7 @@ const ResultsSection = () => {
               >
                 {comparison.highlighted && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <div className="bg-gradient-to-r from-primary to-accent text-white px-4 py-1 rounded-full text-sm font-bold">
+                    <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-bold shadow-[0_10px_35px_rgba(255,115,0,0.35)]">
                       RECOMMENDED
                     </div>
                   </div>
@@ -219,13 +220,13 @@ const ResultsSection = () => {
                     >
                       <div
                         className={`w-6 h-6 rounded-full flex items-center justify-center ${
-                          feature.available ? "bg-green-100" : "bg-red-100"
+                          feature.available ? "bg-primary/20" : "bg-muted"
                         }`}
                       >
                         {feature.available ? (
-                          <div className="w-3 h-3 bg-green-500 rounded-full" />
+                          <div className="w-3 h-3 bg-primary rounded-full" />
                         ) : (
-                          <div className="w-3 h-3 bg-red-500 rounded-full" />
+                          <div className="w-3 h-3 bg-muted-foreground/40 rounded-full" />
                         )}
                       </div>
                       <span

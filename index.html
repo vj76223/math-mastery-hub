@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("abhinav-maths-theme");
+          if (t === "light") document.documentElement.classList.remove("dark");
+          else if (t === "dark" || !t) document.documentElement.classList.add("dark");
+          else if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+            document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TODO: Set the document title to the name of your application -->
@@ -20,7 +31,8 @@
   <meta name="twitter:title" content="Abhinav J — Expert Maths Coaching for Class 10, 11, 12 &amp; JEE">
   <meta property="og:description" content="Score 95%+ in Maths with expert coaching for Class 10, 11, 12 &amp; JEE. Book a free demo class today!">
   <meta name="twitter:description" content="Score 95%+ in Maths with expert coaching for Class 10, 11, 12 &amp; JEE. Book a free demo class today!">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="theme-color" content="#000000" />
 </head>
 
   <body>

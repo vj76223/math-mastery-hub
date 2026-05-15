@@ -61,7 +61,7 @@ const SectionNavigation = () => {
       transition={{ delay: 1, duration: 0.5 }}
       className="fixed left-4 top-1/2 -translate-y-1/2 z-40 hidden lg:block"
     >
-      <div className="glass rounded-2xl p-3 shadow-xl">
+      <div className="glass rounded-2xl p-3 shadow-[0_10px_35px_rgba(255,115,0,0.12)] border border-primary/10">
         <div className="flex flex-col gap-2">
           {sections.map((section) => (
             <button
@@ -69,8 +69,8 @@ const SectionNavigation = () => {
               onClick={() => scrollToSection(section.id)}
               className={`group relative p-3 rounded-xl transition-all duration-300 ${
                 activeSection === section.id
-                  ? "bg-primary/20 text-primary"
-                  : "text-muted-foreground hover:text-foreground hover:bg-primary/10"
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-primary hover:bg-primary/10"
               }`}
               title={section.label}
             >
@@ -94,7 +94,7 @@ const SectionNavigation = () => {
               {activeSection === section.id && (
                 <motion.div
                   layoutId="activeSection"
-                  className="absolute inset-0 rounded-xl bg-primary/20 border border-primary/30"
+                  className="absolute inset-0 rounded-xl bg-primary/15 border border-primary/25"
                   transition={{ duration: 0.3 }}
                 />
               )}

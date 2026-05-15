@@ -1,19 +1,28 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
+import SectionBackground from "@/components/SectionBackground";
 
 const CTASection = () => {
   return (
-    <section id="book-demo" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 gradient-hero opacity-95" />
-      <div className="blob w-96 h-96 bg-white/10 -top-20 -left-20" />
-      <div className="blob w-80 h-80 bg-white/5 bottom-0 right-0" />
+    <section id="book-demo" className="section-dark py-24 relative overflow-hidden">
+      <SectionBackground variant="dark" intensity="strong" />
+      <div className="absolute inset-0 gradient-hero opacity-90" />
 
-      <div className="container mx-auto px-4 relative z-10 text-center">
+      <div className="container mx-auto px-4 md:px-10 relative z-10 text-center">
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="si-label mb-4 text-primary-foreground/90"
+        >
+          Get Started Today
+        </motion.p>
+
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary-foreground"
+          className="si-heading text-3xl sm:text-4xl lg:text-5xl text-primary-foreground"
         >
           Start Your Journey
           <br />
@@ -25,10 +34,10 @@ const CTASection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="mt-4 text-primary-foreground/70 max-w-md mx-auto"
+          className="mt-4 text-primary-foreground/80 max-w-md mx-auto leading-relaxed"
         >
           Learn from the mentor who guided AIR 1. Book your free session and
-          discover the rank producer's teaching methods.
+          discover the rank producer&apos;s teaching methods.
         </motion.p>
 
         <motion.div
@@ -42,8 +51,7 @@ const CTASection = () => {
             href="https://wa.me/919999999999?text=Hi%20Abhinav%2C%20I%20want%20to%20book%20a%20free%20session"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-2xl text-base font-bold transition-all hover:scale-105"
-            style={{ boxShadow: "0 0 32px hsl(170 60% 42% / 0.5)" }}
+            className="inline-flex items-center gap-2 bg-black text-white dark:bg-white dark:text-black px-8 py-4 rounded-full text-base font-bold transition-all duration-300 hover:scale-105 shadow-[0_10px_35px_rgba(0,0,0,0.25)]"
           >
             Book Free Session →
           </a>
@@ -51,7 +59,7 @@ const CTASection = () => {
             href="https://wa.me/919999999999"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-primary-foreground/10 text-primary-foreground border border-primary-foreground/20 px-8 py-4 rounded-2xl text-base font-bold hover:bg-primary-foreground/20 transition-all"
+            className="inline-flex items-center gap-2 bg-white/10 text-primary-foreground border border-white/25 px-8 py-4 rounded-full text-base font-semibold hover:bg-white/20 transition-all duration-300 backdrop-blur-xl"
           >
             <MessageCircle size={18} /> Chat on WhatsApp
           </a>

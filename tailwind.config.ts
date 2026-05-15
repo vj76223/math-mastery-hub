@@ -14,9 +14,14 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        sans: ['"Inter"', "system-ui", "sans-serif"],
       },
       colors: {
+        si: {
+          orange: "hsl(25 95% 53%)",
+          surface: "hsl(0 0% 96%)",
+          "surface-dark": "hsl(0 0% 4%)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Youtube } from "lucide-react";
+import SectionBackground from "@/components/SectionBackground";
 
 const videos = [
   {
@@ -22,7 +23,8 @@ const videos = [
 
 const VideoSection = () => {
   return (
-    <section id="videos" className="py-24 relative bg-secondary/30">
+    <section id="videos" className="section-dark py-24 relative">
+      <SectionBackground variant="dark" />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,7 +32,8 @@ const VideoSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
+          <p className="si-label mb-3">Watch & Learn</p>
+          <h2 className="si-heading text-3xl sm:text-4xl text-foreground">
             Mentor <span className="gradient-text">Spotlight</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">

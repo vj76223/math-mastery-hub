@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import SectionBackground from "@/components/SectionBackground";
 
 const testimonials = [
   {
@@ -81,9 +82,9 @@ const TestimonialsSection = () => {
   return (
     <section
       id="testimonials"
-      className="py-24 relative section-transition bg-secondary/30"
+      className="section-alt py-24 relative"
     >
-      <div className="blob w-80 h-80 bg-accent/10 top-10 right-10 animate-pulse-glow" />
+      <SectionBackground variant="alt" />
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <motion.div
@@ -93,7 +94,8 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-20"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground mb-4">
+          <p className="si-label mb-3">Student Voices</p>
+          <h2 className="si-heading text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
             Success <span className="gradient-text">Stories</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -195,7 +197,7 @@ const TestimonialsSection = () => {
                 onClick={() => goToSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? "bg-gradient-to-r from-primary to-accent scale-125"
+                    ? "bg-primary scale-125 shadow-[0_0_12px_rgba(255,115,0,0.5)]"
                     : "bg-primary/30 hover:bg-primary/50"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}

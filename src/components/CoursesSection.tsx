@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Users, Calendar, BarChart3, MessageCircle } from "lucide-react";
+import SectionBackground from "@/components/SectionBackground";
 
 const offerings = [
   {
@@ -34,8 +35,8 @@ const offerings = [
 
 const CoursesSection = () => {
   return (
-    <section id="courses" className="py-24 relative">
-      <div className="blob w-64 h-64 bg-accent/10 bottom-0 right-0 animate-pulse-glow" />
+    <section id="courses" className="section-dark py-24 relative">
+      <SectionBackground variant="dark" />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,7 +44,8 @@ const CoursesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
+          <p className="si-label mb-3">Programs</p>
+          <h2 className="si-heading text-3xl sm:text-4xl text-foreground">
             What You <span className="gradient-text">Get</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">

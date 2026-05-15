@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Brain, Lightbulb, Target, BookOpen, Zap, Award } from "lucide-react";
+import SectionBackground from "@/components/SectionBackground";
 
 const philosophyPoints = [
   {
@@ -36,7 +37,8 @@ const philosophyPoints = [
 
 const WhyChooseSection = () => {
   return (
-    <section id="why-me" className="py-24 relative bg-secondary/30">
+    <section id="why-me" className="section-alt py-24 relative">
+      <SectionBackground variant="alt" />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,7 +46,8 @@ const WhyChooseSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
+          <p className="si-label mb-3">Approach</p>
+          <h2 className="si-heading text-3xl sm:text-4xl text-foreground">
             Teaching <span className="gradient-text">Philosophy</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">

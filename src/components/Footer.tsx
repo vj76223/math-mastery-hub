@@ -2,14 +2,15 @@ import { Phone, Mail, MapPin, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-12 border-t border-border">
-      <div className="container mx-auto px-4">
+    <footer className="relative py-12 border-t border-primary/10 bg-background">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,115,0,0.06),transparent_70%)] pointer-events-none" />
+      <div className="container mx-auto px-4 md:px-10 relative z-10">
         <div className="grid sm:grid-cols-3 gap-8">
           <div>
-            <div className="text-lg font-extrabold gradient-text mb-3">
+            <div className="text-lg font-black tracking-tight gradient-text mb-3">
               Abhinav Maths
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground leading-relaxed">
               Expert maths coaching for Class 10–12 & JEE. Helping students
               achieve their best since 2016.
             </p>
@@ -27,7 +28,7 @@ const Footer = () => {
                 <a
                   key={l.label}
                   href={l.href}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
                 >
                   {l.label}
                 </a>
@@ -38,26 +39,26 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-3">Contact</h4>
             <div className="flex flex-col gap-2 text-sm text-muted-foreground">
               <span className="flex items-center gap-2">
-                <Phone size={14} /> +91 99999 99999
+                <Phone size={14} className="text-primary" /> +91 99999 99999
               </span>
               <span className="flex items-center gap-2">
-                <Mail size={14} /> Abhinav@mathsmentor.in
+                <Mail size={14} className="text-primary" /> Abhinav@mathsmentor.in
               </span>
               <span className="flex items-center gap-2">
-                <MapPin size={14} /> New Delhi, India
+                <MapPin size={14} className="text-primary" /> New Delhi, India
               </span>
               <a
                 href="https://youtube.com/@mathsgenius"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-primary transition-colors"
+                className="flex items-center gap-2 hover:text-primary transition-colors duration-300"
               >
-                <Youtube size={14} /> YouTube Channel
+                <Youtube size={14} className="text-primary" /> YouTube Channel
               </a>
             </div>
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-border text-center text-xs text-muted-foreground">
+        <div className="mt-10 pt-6 border-t border-primary/10 text-center text-xs text-muted-foreground">
           © {new Date().getFullYear()} Abhinav Maths. All rights reserved.
         </div>
       </div>
