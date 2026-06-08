@@ -26,12 +26,12 @@ const philosophyPoints = [
   {
     icon: Zap,
     title: "Build Speed",
-    desc: "Once concepts are clear, develop the speed and accuracy needed for competitive exams.",
+    desc: "Once concepts are clear, develop the speed and accuracy needed for exams worldwide.",
   },
   {
     icon: Award,
-    title: "Exam Strategy",
-    desc: "Combine conceptual clarity with strategic thinking to maximize JEE performance.",
+    title: "Exam Readiness",
+    desc: "Combine conceptual clarity with strategic thinking for school and competitive assessments globally.",
   },
 ];
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   Target,
   Brain,
@@ -8,24 +8,32 @@ import {
   BookOpen,
   MessageCircle,
   Video,
+  Globe,
+  HelpCircle,
 } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const sections = [
+  { id: "hero", label: "Home", icon: Target },
+  { id: "about", label: "About", icon: Users },
+  { id: "exams", label: "Exams", icon: Globe },
+  { id: "videos", label: "Videos", icon: Video },
+  { id: "results", label: "Results", icon: Award },
+  { id: "courses", label: "Program", icon: BookOpen },
+  { id: "why-me", label: "Philosophy", icon: Brain },
+  { id: "testimonials", label: "Stories", icon: MessageCircle },
+  { id: "faq", label: "FAQ", icon: HelpCircle },
+];
 
 const SectionNavigation = () => {
   const [activeSection, setActiveSection] = useState("");
-
-  const sections = [
-    { id: "hero", label: "Home", icon: Target },
-    { id: "about", label: "About", icon: Users },
-    { id: "videos", label: "Videos", icon: Video },
-    { id: "results", label: "Results", icon: Award },
-    { id: "courses", label: "Program", icon: BookOpen },
-    { id: "why-me", label: "Philosophy", icon: Brain },
-    { id: "testimonials", label: "Stories", icon: MessageCircle },
-  ];
+  const [isVisible, setIsVisible] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 100;
+      setIsVisible(window.scrollY > 320);
 
       for (const section of sections) {
         const element = document.getElementById(section.id);
@@ -42,8 +50,8 @@ const SectionNavigation = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial call
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -55,54 +63,73 @@ const SectionNavigation = () => {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: 1, duration: 0.5 }}
-      className="fixed left-4 top-1/2 -translate-y-1/2 z-40 hidden lg:block"
-    >
-      <div className="glass rounded-2xl p-3 shadow-[0_10px_35px_rgba(255,115,0,0.12)] border border-primary/10">
-        <div className="flex flex-col gap-2">
-          {sections.map((section) => (
-            <button
-              key={section.id}
-              onClick={() => scrollToSection(section.id)}
-              className={`group relative p-3 rounded-xl transition-all duration-300 ${
-                activeSection === section.id
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-primary hover:bg-primary/10"
-              }`}
-              title={section.label}
-            >
-              <section.icon
-                size={18}
-                className={`transition-transform duration-300 ${
-                  activeSection === section.id
-                    ? "scale-110"
-                    : "group-hover:scale-110"
-                }`}
-              />
+    <AnimatePresence>
+      {isVisible && (
+        <motion.div
+          initial={{ opacity: 0, x: -12 }}
+          animate={{ opacity: isHovered ? 1 : 0.35, x: 0 }}
+          exit={{ opacity: 0, x: -12 }}
+          transition={{ duration: 0.25 }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className="fixed left-3 top-1/2 -translate-y-1/2 z-40 hidden lg:block"
+        >
+          <div
+            className={cn(
+              "rounded-full transition-all duration-300 border",
+              isHovered
+                ? "bg-background/80 backdrop-blur-md border-border/60 shadow-sm px-2 py-3"
+                : "bg-transparent border-transparent px-1 py-2",
+            )}
+          >
+            <div className="flex flex-col gap-0.5">
+              {sections.map((section) => {
+                const isActive = activeSection === section.id;
+                return (
+                  <button
+                    key={section.id}
+                    onClick={() => scrollToSection(section.id)}
+                    aria-label={section.label}
+                    className={cn(
+                      "group relative flex items-center rounded-full transition-colors duration-200",
+                      isHovered ? "gap-2.5 px-2 py-1.5" : "p-1.5 justify-center",
+                      isActive
+                        ? "text-primary"
+                        : "text-muted-foreground/70 hover:text-primary",
+                    )}
+                  >
+                    <span
+                      className={cn(
+                        "absolute left-0 top-1/2 -translate-y-1/2 rounded-full bg-primary transition-all duration-200",
+                        isActive ? "h-1 w-1 opacity-100" : "h-0 w-0 opacity-0",
+                        !isHovered && "hidden",
+                      )}
+                    />
 
-              {/* Tooltip */}
-              <div className="absolute left-full ml-2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                <div className="bg-foreground text-background px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
-                  {section.label}
-                </div>
-              </div>
+                    <section.icon
+                      size={isHovered ? 15 : 13}
+                      strokeWidth={isActive ? 2.25 : 1.75}
+                      className="shrink-0 transition-transform duration-200 group-hover:scale-105"
+                    />
 
-              {/* Active indicator */}
-              {activeSection === section.id && (
-                <motion.div
-                  layoutId="activeSection"
-                  className="absolute inset-0 rounded-xl bg-primary/15 border border-primary/25"
-                  transition={{ duration: 0.3 }}
-                />
-              )}
-            </button>
-          ))}
-        </div>
-      </div>
-    </motion.div>
+                    <span
+                      className={cn(
+                        "text-xs font-medium whitespace-nowrap overflow-hidden transition-all duration-300",
+                        isHovered
+                          ? "max-w-[5rem] opacity-100"
+                          : "max-w-0 opacity-0",
+                      )}
+                    >
+                      {section.label}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 

@@ -8,21 +8,21 @@ const results = [
     icon: Award,
     value: 47,
     suffix: "+",
-    label: "Ranks Under AIR 500",
+    label: "Top Competitive Ranks",
     color: "text-primary",
   },
   {
     icon: Trophy,
     value: 1,
     suffix: "",
-    label: "AIR 1 Mentored",
+    label: "Top Rank Mentored",
     color: "text-accent",
   },
   {
     icon: Users,
     value: 97,
     suffix: "%+",
-    label: "Percentile Students",
+    label: "High-Performing Students",
     color: "text-primary",
   },
   {
@@ -76,21 +76,21 @@ const ResultsSection = () => {
         { text: "Large batch sizes", available: true },
         { text: "Fixed curriculum", available: true },
         { text: "Personal attention", available: false },
-        { text: "AIR 1 mentorship", available: false },
+        { text: "1:1 doubt support", available: false },
         { text: "Feynman technique", available: false },
-        { text: "50M+ students impacted", available: false },
+        { text: "Global curriculum support", available: false },
       ],
       highlighted: false,
     },
     {
-      title: "Abhinav Jha's Mentorship",
+      title: "Global Maths Academy",
       features: [
-        { text: "Small batch sizes", available: true },
-        { text: "Personalized curriculum", available: true },
+        { text: "Small-group mentoring", available: true },
+        { text: "Personalized learning paths", available: true },
         { text: "1:1 personal attention", available: true },
-        { text: "AIR 1 mentorship", available: true },
+        { text: "Weekly assessments", available: true },
         { text: "Feynman technique", available: true },
-        { text: "50M+ students impacted", available: true },
+        { text: "Global curriculum support", available: true },
       ],
       highlighted: true,
     },
@@ -116,8 +116,8 @@ const ResultsSection = () => {
             Results That <span className="gradient-text">Speak</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Not luck. A system that works - 30+ ranks within AIR 500 and
-            consistent 99%ile results
+            Not luck. A proven system — top competitive ranks, stronger grades,
+            and students who genuinely love Mathematics.
           </p>
         </motion.div>
 
@@ -177,8 +177,8 @@ const ResultsSection = () => {
               Why Choose <span className="gradient-text">Abhinav Jha</span>
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              See the difference between traditional coaching and rank-producing
-              mentorship
+              See the difference between traditional coaching and a global
+              mathematics upskilling approach
             </p>
           </div>
 
@@ -272,7 +272,7 @@ const ResultsSection = () => {
             >
               <div className="text-3xl font-bold gradient-text mb-2">100%</div>
               <p className="text-sm text-muted-foreground font-medium">
-                JEE Advanced Selection Rate
+                Exam Success Rate
               </p>
             </motion.div>
 

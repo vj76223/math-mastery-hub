@@ -14,9 +14,10 @@ const Navbar = () => {
 
   const links = [
     { label: "About", href: "#about" },
+    { label: "Exams", href: "#exams" },
+    { label: "Programs", href: "#courses" },
+    { label: "FAQ", href: "#faq" },
     { label: "Results", href: "#results" },
-    { label: "Courses", href: "#courses" },
-    { label: "Videos", href: "#videos" },
     { label: "Testimonials", href: "#testimonials" },
   ];
 

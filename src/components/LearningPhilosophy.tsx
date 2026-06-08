@@ -43,19 +43,19 @@ const LearningPhilosophy = () => {
     },
     {
       title: "Application",
-      description: "Practice with JEE-level problems",
+      description: "Practice with exam-level and olympiad problems",
       duration: "3-4 months",
       status: "active",
     },
     {
       title: "Mastery",
-      description: "Achieve speed and accuracy for exams",
+      description: "Achieve speed, accuracy, and logical reasoning",
       duration: "2-3 months",
       status: "upcoming",
     },
     {
       title: "Excellence",
-      description: "Crack JEE with confidence",
+      description: "Compete globally with confidence",
       duration: "Final phase",
       status: "upcoming",
     },

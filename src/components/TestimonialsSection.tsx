@@ -5,44 +5,44 @@ import SectionBackground from "@/components/SectionBackground";
 
 const testimonials = [
   {
-    name: "AIR 1 Student",
-    role: "JEE Advanced 2022",
-    text: "Completed entire JEE Maths syllabus by class 10. His mentorship led to AIR 1.",
+    name: "Top Rank Student",
+    role: "Competitive Exams, India",
+    text: "Completed the entire Maths syllabus early. His mentorship built the logic and confidence I needed for top ranks.",
     rating: 5,
     achievement: "All India Rank 1",
   },
   {
-    name: "99%ile Student",
-    role: "JEE Advanced",
-    text: "Abhinav Sir didn't just teach Maths, he taught me how to think, plan, and attempt JEE with precision.",
+    name: "High Performer",
+    role: "Competitive Exams",
+    text: "Abhinav Sir didn't just teach Maths — he taught me how to think, reason, and approach problems with precision.",
     rating: 5,
     achievement: "99 Percentile",
   },
   {
-    name: "AIR 40 Student",
-    role: "JEE Advanced",
-    text: "The Feynman-based teaching approach gave me the conceptual clarity needed to crack JEE Advanced.",
+    name: "Conceptual Learner",
+    role: "Olympiad Preparation",
+    text: "The Feynman-based approach gave me the deep conceptual clarity I needed for advanced problem-solving.",
     rating: 5,
-    achievement: "All India Rank 40",
+    achievement: "Top 40 Rank",
   },
   {
-    name: "AIR 79 Student",
-    role: "JEE Advanced 2022",
-    text: "From average marks to AIR 79 - his mentorship transformed my problem-solving abilities completely.",
+    name: "Transformed Student",
+    role: "School & Competitive",
+    text: "From average marks to top ranks — his mentorship completely transformed my problem-solving abilities.",
     rating: 5,
-    achievement: "All India Rank 79",
+    achievement: "Top 79 Rank",
   },
   {
-    name: "Top Performer",
-    role: "JEE Mains",
-    text: "The problem-solving strategies I learned were game-changing. Scored 99.2 percentile in JEE Mains.",
+    name: "SAT Student",
+    role: "SAT Math — USA",
+    text: "The problem-solving strategies were game-changing. I finally understood Maths instead of memorizing formulas.",
     rating: 5,
-    achievement: "99.2 Percentile",
+    achievement: "780 SAT Math",
   },
   {
     name: "Board Topper",
-    role: "Class 12 Boards",
-    text: "Maths was my weakest subject. After Abhinav Sir's guidance, I scored 98% in boards!",
+    role: "School Mathematics",
+    text: "Maths was my weakest subject. After Abhinav Sir's guidance, I scored 98% and actually started enjoying it!",
     rating: 5,
     achievement: "98% in Boards",
   },
@@ -99,8 +99,8 @@ const TestimonialsSection = () => {
             Success <span className="gradient-text">Stories</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Hear from AIR rankers and top performers who've experienced the rank
-            producer's mentorship
+            Hear from students worldwide who've built confidence, stronger
+            grades, and a genuine love for Mathematics
           </p>
         </motion.div>
 

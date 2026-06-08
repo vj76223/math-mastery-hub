@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Youtube, GraduationCap } from "lucide-react";
-import teacherImg from "@/assets/teacher-portrait.jpg";
+import { MessageCircle, Youtube, Globe } from "lucide-react";
+import heroImg from "@/assets/hero-portrait.png";
 import SectionBackground from "@/components/SectionBackground";
 
 const stats = [
   { value: "12M+", label: "Learners Impacted" },
-  { value: "AIR 1", label: "Mentored Rank" },
+  { value: "6+", label: "Countries Served" },
   { value: "10+", label: "Years Experience" },
 ];
 
@@ -26,8 +26,8 @@ const HeroSection = () => {
               transition={{ duration: 0.7, ease: "easeOut" }}
               className="inline-flex items-center gap-2 glass px-6 py-3 rounded-full text-sm font-semibold text-primary mb-8"
             >
-              <GraduationCap size={18} />
-              <span>Learn Maths from a Rank Producer</span>
+              <Globe size={18} />
+              <span>Global Mathematics Upskilling Platform</span>
             </motion.div>
 
             <motion.p
@@ -36,7 +36,7 @@ const HeroSection = () => {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="si-label mb-4"
             >
-              IIT Mentor · JEE Mathematics
+              Expert Mentor · Mathematics Worldwide
             </motion.p>
 
             <motion.h1
@@ -45,7 +45,8 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
               className="si-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground mb-4"
             >
-              <span className="block">Abhinav Jha</span>
+              <span className="block">Master Mathematics.</span>
+              <span className="block gradient-text">Compete Globally.</span>
             </motion.h1>
 
             <motion.p
@@ -54,10 +55,11 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.25, ease: "easeOut" }}
               className="text-xl sm:text-2xl lg:text-3xl font-light text-muted-foreground leading-[1.15] mb-6"
             >
-              Guided{" "}
+              Building{" "}
               <span className="gradient-text font-semibold">
-                AIR 1, AIR 40, AIR 79
-              </span>
+                world-class mathematical thinkers
+              </span>{" "}
+              for students across the globe.
             </motion.p>
 
             <motion.p
@@ -66,11 +68,16 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.35, ease: "easeOut" }}
               className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed mb-8"
             >
-              Master concepts. Build speed. Crack JEE with confidence.{" "}
+              Develop strong mathematical thinking, problem-solving skills, and
+              academic excellence through the{" "}
+              <span className="text-foreground font-medium">
+                Feynman Teaching Method
+              </span>
+              . Led by{" "}
+              <span className="text-foreground font-medium">Abhinav Jha</span>{" "}
+              with{" "}
               <span className="text-foreground font-medium">10+ years</span> of
-              teaching excellence.{" "}
-              <span className="text-foreground font-medium">12M+</span> learners
-              impacted.
+              teaching excellence.
             </motion.p>
 
             <motion.div
@@ -125,8 +132,8 @@ const HeroSection = () => {
               <div className="absolute -inset-6 rounded-[34px] gradient-premium opacity-25 blur-3xl group-hover:opacity-35 transition-opacity duration-500" />
               <div className="relative gradient-border-card p-1 rounded-[34px] drop-shadow-[0_20px_60px_rgba(255,115,0,0.25)]">
                 <img
-                  src={teacherImg}
-                  alt="Abhinav - Maths Educator"
+                  src={heroImg}
+                  alt="Abhinav Jha - Global Mathematics Educator"
                   width={400}
                   height={500}
                   className="rounded-[30px] w-72 sm:w-80 lg:w-96 object-cover"
@@ -138,9 +145,9 @@ const HeroSection = () => {
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
                 className="absolute -bottom-6 -left-6 glass rounded-2xl px-5 py-4 text-center"
               >
-                <div className="text-xl font-black gradient-text">AIR 1</div>
+                <div className="text-xl font-black gradient-text">Feynman</div>
                 <div className="text-xs text-muted-foreground font-medium">
-                  Mentored
+                  Method
                 </div>
               </motion.div>
 

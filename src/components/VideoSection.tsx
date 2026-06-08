@@ -5,11 +5,11 @@ import SectionBackground from "@/components/SectionBackground";
 const videos = [
   {
     id: "0sxHKX1DpNo",
-    title: "AIR 1 RK Shishir Mentorship — Success Story",
+    title: "Mentorship Success Story — Top Rank Achievement",
   },
   {
     id: "aYIKhVS4lNo",
-    title: "JEE Advanced Strategy with AIR 1",
+    title: "Competitive Exam Strategy & Problem Solving",
   },
   {
     id: "FkkXpqyjCAM",
@@ -17,7 +17,7 @@ const videos = [
   },
   {
     id: "PVgErBPYb-Q",
-    title: "Rank Producer Teaching Methods",
+    title: "The Feynman Teaching Method in Action",
   },
 ];
 
@@ -37,8 +37,8 @@ const VideoSection = () => {
             Mentor <span className="gradient-text">Spotlight</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">
-            Learn from my mentorship of AIR 1 RK Shishir and discover the
-            teaching methods that produce top ranks.
+            Discover the teaching methods that build mathematical thinking,
+            problem-solving skills, and exam readiness for students worldwide.
           </p>
         </motion.div>
 

@@ -26,7 +26,7 @@ const CTASection = () => {
         >
           Start Your Journey
           <br />
-          to JEE Success
+          to Mathematical Excellence
         </motion.h2>
 
         <motion.p
@@ -36,8 +36,8 @@ const CTASection = () => {
           transition={{ delay: 0.1 }}
           className="mt-4 text-primary-foreground/80 max-w-md mx-auto leading-relaxed"
         >
-          Learn from the mentor who guided AIR 1. Book your free session and
-          discover the rank producer&apos;s teaching methods.
+          Book your free session and discover how the Feynman Method builds
+          strong mathematical thinking for students worldwide.
         </motion.p>
 
         <motion.div

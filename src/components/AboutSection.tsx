@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { GraduationCap, BookOpen, Award, Users } from "lucide-react";
-import teacherImg from "@/assets/teacher-portrait.jpg";
+import mentorImg from "@/assets/mentor-success.png";
 import SectionBackground from "@/components/SectionBackground";
 
 const highlights = [
   { icon: GraduationCap, text: "B.Tech, NIT Nagpur" },
   { icon: BookOpen, text: "10+ Years of Teaching Excellence" },
-  { icon: Award, text: "Mentored AIR 1, AIR 40, AIR 79 (JEE Advanced)" },
+  { icon: Award, text: "Feynman Teaching Method" },
   { icon: Users, text: "50M+ Students Reached Across Platforms" },
 ];
 
@@ -30,12 +30,12 @@ const AboutSection = () => {
             Meet <span className="gradient-text">Abhinav Jha</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            The rank producer who transforms ordinary students into JEE toppers
+            A global mathematics mentor who transforms students into confident
+            problem-solvers and critical thinkers
           </p>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 max-w-6xl mx-auto">
-          {/* Enhanced Image Section */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -47,36 +47,17 @@ const AboutSection = () => {
               <div className="absolute -inset-4 rounded-3xl gradient-premium opacity-20 blur-2xl group-hover:opacity-30 transition-opacity duration-500" />
               <div className="relative gradient-border-card card-glow p-1">
                 <img
-                  src={teacherImg}
-                  alt="Abhinav - Maths Educator"
+                  src={mentorImg}
+                  alt="Abhinav Jha mentoring a top-performing student"
                   width={320}
                   height={400}
                   loading="lazy"
                   className="rounded-3xl w-72 sm:w-80 lg:w-96 object-cover"
                 />
               </div>
-
-              {/* Floating achievement badge */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{
-                  repeat: Infinity,
-                  duration: 4,
-                  ease: "easeInOut",
-                }}
-                className="absolute -bottom-4 -right-4 glass rounded-2xl px-4 py-3 text-center card-glow shadow-xl"
-              >
-                <div className="text-lg font-extrabold gradient-text">
-                  AIR 1
-                </div>
-                <div className="text-xs text-muted-foreground font-medium">
-                  Mentored
-                </div>
-              </motion.div>
             </div>
           </motion.div>
 
-          {/* Enhanced Content Section */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -84,7 +65,6 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="flex-1 space-y-8"
           >
-            {/* Main description cards */}
             <div className="space-y-6">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -98,15 +78,13 @@ const AboutSection = () => {
                   <strong className="text-foreground text-xl">
                     Abhinav Jha
                   </strong>
-                  , a rank producer in JEE Mathematics. With{" "}
+                  , founder of a global mathematics upskilling platform. With{" "}
                   <strong className="text-foreground">10+ years</strong> of
-                  teaching excellence, I've guided students to achieve{" "}
-                  <strong className="gradient-text">
-                    AIR 1, AIR 40, AIR 79
-                  </strong>{" "}
-                  in JEE Advanced. My approach has impacted{" "}
+                  teaching excellence, I've guided students to achieve top
+                  ranks in competitive exams while building deep conceptual
+                  understanding. My approach has impacted{" "}
                   <strong className="text-foreground">12M+</strong> learners
-                  across digital platforms.
+                  across digital platforms worldwide.
                 </p>
               </motion.div>
 
@@ -118,16 +96,16 @@ const AboutSection = () => {
                 className="gradient-border-card card-glow p-6 glass"
               >
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  Abhinav Jha is not just a teacher - he is a rank producer. My
-                  teaching focuses on deep conceptual clarity, exam strategy,
-                  and building problem-solving intuition. I believe in
-                  understanding the "why" before the "how", ensuring long-term
-                  retention and confidence for cracking JEE.
+                  My teaching focuses on the Feynman Technique — deep conceptual
+                  clarity over rote learning, personalized learning paths, and
+                  building genuine problem-solving intuition. Whether preparing
+                  for JEE, SAT, IB, GCSE, or school excellence, I believe in
+                  understanding the "why" before the "how" to develop a lasting
+                  love for Mathematics.
                 </p>
               </motion.div>
             </div>
 
-            {/* Enhanced highlights grid */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -171,7 +149,6 @@ const AboutSection = () => {
               ))}
             </motion.div>
 
-            {/* Call to action card */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -180,11 +157,11 @@ const AboutSection = () => {
               className="gradient-premium rounded-2xl p-8 text-center"
             >
               <h3 className="text-2xl font-bold text-white mb-4">
-                Ready to Transform Your JEE Journey?
+                Ready to Upskill Your Mathematical Thinking?
               </h3>
               <p className="text-white/90 mb-6 max-w-md mx-auto">
-                Join the ranks of AIR 1, AIR 40, and AIR 79. Experience the
-                difference with personalized mentorship.
+                Join students worldwide building confidence, critical thinking,
+                and exam readiness through personalized mentorship.
               </p>
               <a
                 href="#book-demo"

@@ -11,8 +11,8 @@ const Footer = () => {
               Abhinav Maths
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Expert maths coaching for Class 10–12 & JEE. Helping students
-              achieve their best since 2016.
+              A global mathematics upskilling platform for students worldwide.
+              Building mathematical thinkers since 2016.
             </p>
           </div>
           <div>
@@ -20,8 +20,10 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               {[
                 { label: "About", href: "#about" },
+                { label: "Exams", href: "#exams" },
                 { label: "Results", href: "#results" },
                 { label: "Courses", href: "#courses" },
+                { label: "FAQ", href: "#faq" },
                 { label: "Videos", href: "#videos" },
                 { label: "Testimonials", href: "#testimonials" },
               ].map((l) => (

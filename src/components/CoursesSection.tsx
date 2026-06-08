@@ -49,8 +49,8 @@ const CoursesSection = () => {
             What You <span className="gradient-text">Get</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">
-            Complete learning ecosystem designed for JEE success with personal
-            mentorship.
+            A complete learning ecosystem with personalized paths, small-group
+            mentoring, and global curriculum support.
           </p>
         </motion.div>
 
