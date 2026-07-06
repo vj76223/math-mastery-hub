@@ -9,9 +9,14 @@ import SectionBackground from "@/components/SectionBackground";
 
 const faqs = [
   {
-    question: "What makes your Math program unique?",
+    question: "Why is the cohort limited to only 100 students?",
     answer:
-      "We use the Feynman Technique and conceptual learning to make Math simple and intuitive.",
+      "By intentionally limiting enrollment to 100 carefully selected students each year, every learner receives personalized guidance, individual attention, and becomes part of a close-knit global community under Abhinav Sir's direct mentorship.",
+  },
+  {
+    question: "What makes The HUNDRED Global unique?",
+    answer:
+      "We combine the Feynman Technique with exclusive 1:1 mentorship, a global alumni network, and an intentionally small cohort — creating extraordinary outcomes through extraordinary mentorship.",
   },
   {
     question: "Does my child get personalized support?",
@@ -51,7 +56,7 @@ const FAQSection = () => {
             Frequently Asked <span className="gradient-text">Questions</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-md mx-auto">
-            Everything you need to know about our global mathematics upskilling
+            Everything you need to know about The HUNDRED Global
             program.
           </p>
         </motion.div>

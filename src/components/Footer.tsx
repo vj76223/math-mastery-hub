@@ -1,24 +1,24 @@
 import { Phone, Mail, MapPin, Youtube } from "lucide-react";
+import BrandLogo from "@/components/BrandLogo";
 
 const Footer = () => {
   return (
     <footer className="relative py-12 border-t border-primary/10 bg-background">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,115,0,0.06),transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(201,162,39,0.06),transparent_70%)] pointer-events-none" />
       <div className="container mx-auto px-4 md:px-10 relative z-10">
         <div className="grid sm:grid-cols-3 gap-8">
           <div>
-            <div className="text-lg font-black tracking-tight gradient-text mb-3">
-              Abhinav Maths
-            </div>
+            <BrandLogo size="md" className="mb-4" />
             <p className="text-sm text-muted-foreground leading-relaxed">
-              A global mathematics upskilling platform for students worldwide.
-              Building mathematical thinkers since 2016.
+              The world's most trusted global mathematics community. 100 students,
+              one global community, a lifetime of opportunities under Abhinav Sir.
             </p>
           </div>
           <div>
             <h4 className="font-semibold text-foreground mb-3">Quick Links</h4>
             <div className="flex flex-col gap-2">
               {[
+                { label: "Vision", href: "#vision" },
                 { label: "About", href: "#about" },
                 { label: "Exams", href: "#exams" },
                 { label: "Results", href: "#results" },
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-primary/10 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Abhinav Maths. All rights reserved.
+          © {new Date().getFullYear()} The HUNDRED Global. All rights reserved.
         </div>
       </div>
     </footer>

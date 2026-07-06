@@ -27,11 +27,11 @@ const AboutSection = () => {
         >
           <p className="si-label mb-3">About the Mentor</p>
           <h2 className="si-heading text-3xl sm:text-4xl lg:text-5xl text-foreground mb-4">
-            Meet <span className="gradient-text">Abhinav Jha</span>
+            Meet <span className="gradient-text">Abhinav Sir</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A global mathematics mentor who transforms students into confident
-            problem-solvers and critical thinkers
+            Personal mentor of The HUNDRED Global — guiding 100 carefully selected
+            students to extraordinary mathematical outcomes
           </p>
         </motion.div>
 
@@ -48,7 +48,7 @@ const AboutSection = () => {
               <div className="relative gradient-border-card card-glow p-1">
                 <img
                   src={mentorImg}
-                  alt="Abhinav Jha mentoring a top-performing student"
+                  alt="Abhinav Sir — Mentor, The HUNDRED Global"
                   width={320}
                   height={400}
                   loading="lazy"
@@ -76,15 +76,16 @@ const AboutSection = () => {
                 <p className="text-muted-foreground leading-relaxed text-lg">
                   Hi! I'm{" "}
                   <strong className="text-foreground text-xl">
-                    Abhinav Jha
+                    Abhinav Sir
                   </strong>
-                  , founder of a global mathematics upskilling platform. With{" "}
+                  , founder and personal mentor of{" "}
+                  <strong className="text-foreground">The HUNDRED Global</strong>.
+                  With{" "}
                   <strong className="text-foreground">10+ years</strong> of
-                  teaching excellence, I've guided students to achieve top
-                  ranks in competitive exams while building deep conceptual
-                  understanding. My approach has impacted{" "}
-                  <strong className="text-foreground">12M+</strong> learners
-                  across digital platforms worldwide.
+                  teaching excellence, I personally guide each of the 100
+                  carefully selected students in our exclusive cohort to achieve
+                  top ranks in competitive exams while building deep conceptual
+                  understanding.
                 </p>
               </motion.div>
 
@@ -165,7 +166,7 @@ const AboutSection = () => {
               </p>
               <a
                 href="#book-demo"
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-bold shadow-[0_10px_35px_rgba(255,115,0,0.35)] hover:shadow-[0_10px_40px_rgba(255,115,0,0.5)] transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-bold shadow-[0_10px_35px_rgba(201,162,39,0.35)] hover:shadow-[0_10px_40px_rgba(201,162,39,0.5)] transition-all duration-300 hover:scale-105"
               >
                 Start Your Journey
               </a>

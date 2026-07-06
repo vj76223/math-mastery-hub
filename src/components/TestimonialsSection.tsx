@@ -197,7 +197,7 @@ const TestimonialsSection = () => {
                 onClick={() => goToSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? "bg-primary scale-125 shadow-[0_0_12px_rgba(255,115,0,0.5)]"
+                    ? "bg-primary scale-125 shadow-[0_0_12px_rgba(201,162,39,0.5)]"
                     : "bg-primary/30 hover:bg-primary/50"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}

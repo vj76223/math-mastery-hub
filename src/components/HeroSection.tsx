@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Youtube, Globe } from "lucide-react";
+import { MessageCircle, Globe, Crown } from "lucide-react";
 import heroImg from "@/assets/hero-portrait.png";
 import SectionBackground from "@/components/SectionBackground";
 
 const stats = [
-  { value: "12M+", label: "Learners Impacted" },
-  { value: "6+", label: "Countries Served" },
-  { value: "10+", label: "Years Experience" },
+  { value: "100", label: "Exclusive Cohort" },
+  { value: "7+", label: "Countries Worldwide" },
+  { value: "10+", label: "Years of Excellence" },
 ];
 
 const HeroSection = () => {
@@ -26,8 +26,8 @@ const HeroSection = () => {
               transition={{ duration: 0.7, ease: "easeOut" }}
               className="inline-flex items-center gap-2 glass px-6 py-3 rounded-full text-sm font-semibold text-primary mb-8"
             >
-              <Globe size={18} />
-              <span>Global Mathematics Upskilling Platform</span>
+              <Crown size={18} />
+              <span>Premium Maths Coaching</span>
             </motion.div>
 
             <motion.p
@@ -36,7 +36,7 @@ const HeroSection = () => {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="si-label mb-4"
             >
-              Expert Mentor · Mathematics Worldwide
+              The HUNDRED Global · Exclusive Mathematics Program
             </motion.p>
 
             <motion.h1
@@ -45,8 +45,8 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
               className="si-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground mb-4"
             >
-              <span className="block">Master Mathematics.</span>
-              <span className="block gradient-text">Compete Globally.</span>
+              <span className="block">100 Students.</span>
+              <span className="block gradient-text">One Global Community.</span>
             </motion.h1>
 
             <motion.p
@@ -55,11 +55,11 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.25, ease: "easeOut" }}
               className="text-xl sm:text-2xl lg:text-3xl font-light text-muted-foreground leading-[1.15] mb-6"
             >
-              Building{" "}
+              A{" "}
               <span className="gradient-text font-semibold">
-                world-class mathematical thinkers
+                lifetime of opportunities
               </span>{" "}
-              for students across the globe.
+              under the personal mentorship of Abhinav Sir.
             </motion.p>
 
             <motion.p
@@ -68,16 +68,10 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.35, ease: "easeOut" }}
               className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed mb-8"
             >
-              Develop strong mathematical thinking, problem-solving skills, and
-              academic excellence through the{" "}
-              <span className="text-foreground font-medium">
-                Feynman Teaching Method
-              </span>
-              . Led by{" "}
-              <span className="text-foreground font-medium">Abhinav Jha</span>{" "}
-              with{" "}
-              <span className="text-foreground font-medium">10+ years</span> of
-              teaching excellence.
+              Extraordinary outcomes through extraordinary mentorship. Every year,
+              only 100 carefully selected students from India, the United States,
+              Canada, the Gulf, Australia, Singapore, and beyond join this
+              exclusive mathematics program.
             </motion.p>
 
             <motion.div
@@ -90,14 +84,14 @@ const HeroSection = () => {
                 href="#book-demo"
                 className="btn-glow-accent text-primary-foreground px-10 py-4 rounded-2xl text-base font-bold"
               >
-                Book a Free Session
+                Apply for Selection
               </a>
               <a
-                href="#"
+                href="#vision"
                 className="btn-glow-primary px-8 py-4 rounded-2xl text-base font-semibold inline-flex items-center gap-3"
               >
-                <MessageCircle size={20} />
-                Chat Support
+                <Globe size={20} />
+                Our Vision
               </a>
             </motion.div>
 
@@ -108,16 +102,16 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row items-center gap-6 text-sm text-muted-foreground"
             >
               <a
-                href="#"
+                href="#vision"
                 className="inline-flex items-center gap-2 hover:text-primary transition-colors duration-300"
               >
-                <Youtube size={18} />
-                <span>12M+ learners reached</span>
+                <MessageCircle size={18} />
+                <span>Lifetime Alumni Network</span>
               </a>
               <div className="hidden sm:block w-px h-4 bg-border" />
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                <span>Available for mentorship</span>
+                <span>Limited seats available</span>
               </div>
             </motion.div>
           </div>
@@ -130,10 +124,10 @@ const HeroSection = () => {
           >
             <div className="relative group">
               <div className="absolute -inset-6 rounded-[34px] gradient-premium opacity-25 blur-3xl group-hover:opacity-35 transition-opacity duration-500" />
-              <div className="relative gradient-border-card p-1 rounded-[34px] drop-shadow-[0_20px_60px_rgba(255,115,0,0.25)]">
+              <div className="relative gradient-border-card p-1 rounded-[34px] drop-shadow-[0_20px_60px_rgba(201,162,39,0.25)]">
                 <img
                   src={heroImg}
-                  alt="Abhinav Jha - Global Mathematics Educator"
+                  alt="Abhinav Sir — Mentor, The HUNDRED Global"
                   width={400}
                   height={500}
                   className="rounded-[30px] w-72 sm:w-80 lg:w-96 object-cover"

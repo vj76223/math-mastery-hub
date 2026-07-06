@@ -10,11 +10,13 @@ import {
   Video,
   Globe,
   HelpCircle,
+  Sparkles,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const sections = [
   { id: "hero", label: "Home", icon: Target },
+  { id: "vision", label: "Vision", icon: Sparkles },
   { id: "about", label: "About", icon: Users },
   { id: "exams", label: "Exams", icon: Globe },
   { id: "videos", label: "Videos", icon: Video },

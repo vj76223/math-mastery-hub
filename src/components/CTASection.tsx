@@ -24,9 +24,9 @@ const CTASection = () => {
           viewport={{ once: true }}
           className="si-heading text-3xl sm:text-4xl lg:text-5xl text-primary-foreground"
         >
-          Start Your Journey
+          Apply for Selection
           <br />
-          to Mathematical Excellence
+          to The HUNDRED Global
         </motion.h2>
 
         <motion.p
@@ -36,8 +36,8 @@ const CTASection = () => {
           transition={{ delay: 0.1 }}
           className="mt-4 text-primary-foreground/80 max-w-md mx-auto leading-relaxed"
         >
-          Book your free session and discover how the Feynman Method builds
-          strong mathematical thinking for students worldwide.
+          Join 100 carefully selected students from around the world under the
+          personal mentorship of Abhinav Sir.
         </motion.p>
 
         <motion.div
@@ -48,7 +48,7 @@ const CTASection = () => {
           className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="https://wa.me/919999999999?text=Hi%20Abhinav%2C%20I%20want%20to%20book%20a%20free%20session"
+            href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20apply%20for%20The%20HUNDRED%20Global"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-black text-white dark:bg-white dark:text-black px-8 py-4 rounded-full text-base font-bold transition-all duration-300 hover:scale-105 shadow-[0_10px_35px_rgba(0,0,0,0.25)]"

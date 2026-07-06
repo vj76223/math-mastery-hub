@@ -12,7 +12,7 @@ import NotFound from "./pages/NotFound.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <ThemeProvider attribute="class" defaultTheme="dark" enableSystem storageKey="abhinav-maths-theme">
+  <ThemeProvider attribute="class" defaultTheme="dark" enableSystem storageKey="hundred-global-theme">
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />

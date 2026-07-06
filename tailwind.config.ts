@@ -18,7 +18,7 @@ export default {
       },
       colors: {
         si: {
-          orange: "hsl(25 95% 53%)",
+          gold: "hsl(43 72% 50%)",
           surface: "hsl(0 0% 96%)",
           "surface-dark": "hsl(0 0% 4%)",
         },

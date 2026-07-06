@@ -7,7 +7,7 @@ const offerings = [
     icon: Users,
     title: "1:1 Mentorship",
     subtitle: "Personal Attention",
-    desc: "Direct mentorship with Abhinav Jha for personalized learning and doubt solving.",
+    desc: "Direct mentorship with Abhinav Sir for personalized learning and doubt solving.",
     cta: "Book Session",
   },
   {

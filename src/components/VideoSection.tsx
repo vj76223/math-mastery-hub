@@ -13,7 +13,7 @@ const videos = [
   },
   {
     id: "FkkXpqyjCAM",
-    title: "Math Mastery Techniques — Abhinav Jha",
+    title: "The HUNDRED Global — Math Mastery",
   },
   {
     id: "PVgErBPYb-Q",

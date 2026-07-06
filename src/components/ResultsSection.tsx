@@ -83,7 +83,7 @@ const ResultsSection = () => {
       highlighted: false,
     },
     {
-      title: "Global Maths Academy",
+      title: "The HUNDRED Global",
       features: [
         { text: "Small-group mentoring", available: true },
         { text: "Personalized learning paths", available: true },
@@ -174,11 +174,11 @@ const ResultsSection = () => {
         >
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-              Why Choose <span className="gradient-text">Abhinav Jha</span>
+              Why Choose <span className="gradient-text">The HUNDRED</span>
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              See the difference between traditional coaching and a global
-              mathematics upskilling approach
+              See the difference between traditional coaching and The HUNDRED
+              Global's exclusive mentorship model
             </p>
           </div>
 
@@ -202,7 +202,7 @@ const ResultsSection = () => {
               >
                 {comparison.highlighted && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-bold shadow-[0_10px_35px_rgba(255,115,0,0.35)]">
+                    <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-bold shadow-[0_10px_35px_rgba(201,162,39,0.35)]">
                       RECOMMENDED
                     </div>
                   </div>
